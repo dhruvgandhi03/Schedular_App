@@ -1,0 +1,6 @@
+.MuiOutlinedInput-notchedOutline:hover {
+  border-color: secondary !important;
+}
+.MuiOutlinedInput-notchedOutline {
+  border-color: white !important;
+}
