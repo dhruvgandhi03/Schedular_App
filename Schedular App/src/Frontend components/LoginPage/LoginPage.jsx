@@ -4,14 +4,21 @@ import Sc_logo from "../../assets/schedular.png";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+
+import visible from "@mui/icons-material/VisibilityOutlined";
 
 const LoginPage = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [showpass, setShowpass] = useState(false);
+
+  const Nav = useNavigate();
 
   const LoginClicked = async (e) => {
     e.preventDefault();
+
+    setShowpass(!showpass);
     console.log("button works");
     const res = await fetch("/authenticate", {
       method: "POST",
@@ -31,6 +38,7 @@ const LoginPage = () => {
     } else if (res.status === 400) {
       window.alert("Invalid Credentials");
     } else if (res.status === 200) {
+      Nav("/homepage");
       window.alert("Successfully Logged In");
     }
   };
