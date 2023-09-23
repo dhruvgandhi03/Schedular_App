@@ -6,7 +6,7 @@ import TextField from "@mui/material/TextField";
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
-import visible from "@mui/icons-material/VisibilityOutlined";
+// import visible from "@mui/icons-material/VisibilityOutlined";
 
 const LoginPage = () => {
   const [email, setEmail] = useState("");

@@ -156,7 +156,7 @@ const SignupPage = () => {
         </div>
         <h3 className="text-white">
           Already have an account ?{" "}
-          <Link to="/loginpage" className="text-blue-500 underline">
+          <Link to="/" className="text-blue-500 underline">
             Log in
           </Link>
         </h3>

@@ -15,5 +15,4 @@ export default defineConfig({
   define: {
     // "process.env.VITE_PORT": JSON.stringify(process.env.VITE_PORT),
   },
-  base: "/Schedular_App/",
 });
