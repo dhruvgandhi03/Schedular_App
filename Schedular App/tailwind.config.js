@@ -7,6 +7,9 @@ export default {
         anybody: ["Anybody"],
         apple: ["SF Pro Display"],
       },
+      colors: {
+        boxborder: "#281a29",
+      },
     },
   },
   plugins: [],

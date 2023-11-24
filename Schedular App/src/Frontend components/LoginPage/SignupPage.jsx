@@ -57,9 +57,9 @@ const SignupPage = () => {
   return (
     <>
       {" "}
-      <div className="h-screen w-screen bg-stone-950 flex items-center justify-center flex-col">
+      <div className="h-screen w-screen bg-stone-950 flex items-center  flex-col">
         <img src={Sc_logo} alt="" className="" height="250px" width="750px" />
-        <div className="h-96 w-auto bg-stone-900 flex justify-around flex-col  shadow-lg rounded-lg p-10 items-center">
+        <div className="h-96 w-80 border-2 border-pink-800 flex justify-around flex-col  shadow-lg rounded-lg p-10 items-center">
           <h1 className="text-4xl font-apple  font-semibold text-white relative bottom-5 ">
             Sign Up
           </h1>
@@ -95,7 +95,7 @@ const SignupPage = () => {
             sx={{
               display: "flex",
               alignItems: "center",
-              "& > :not(style)": { m: 1 },
+              "& > :not(style)": { m: 0 },
               "& .MuiInputBase-root": {
                 color: "white",
               },
@@ -122,7 +122,7 @@ const SignupPage = () => {
             sx={{
               display: "flex",
               alignItems: "center",
-              "& > :not(style)": { m: 1 },
+              "& > :not(style)": { m: 0 },
               "& .MuiInputBase-root": {
                 color: "white",
               },

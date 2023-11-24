@@ -1,6 +1,5 @@
 import Button from "@mui/material/Button";
 import Sc_logo from "../../assets/schedular.png";
-
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import { useState } from "react";
@@ -19,7 +18,7 @@ const LoginPage = () => {
     e.preventDefault();
 
     setShowpass(!showpass);
-    console.log("button works");
+    // console.log("button works");
     const res = await fetch("/authenticate", {
       method: "POST",
       headers: {
@@ -38,7 +37,7 @@ const LoginPage = () => {
     } else if (res.status === 400) {
       window.alert("Invalid Credentials");
     } else if (res.status === 200) {
-      Nav("/homepage");
+      Nav("/home/homepage");
       window.alert("Successfully Logged In");
     }
   };
@@ -47,7 +46,7 @@ const LoginPage = () => {
     <>
       <div className="h-screen w-screen bg-stone-950 flex items-center justify-center flex-col">
         <img src={Sc_logo} alt="" className="" height="250px" width="750px" />
-        <div className="h-80 w-80 bg-stone-900 flex justify-around flex-col  shadow-lg rounded-lg p-10 items-center">
+        <div className="h-80 w-72  flex justify-around flex-col  shadow-lg rounded-lg p-10 items-center border-2 border-pink-800">
           <h1 className="text-4xl font-apple  font-semibold text-white relative bottom-5 ">
             Login
           </h1>
@@ -56,7 +55,7 @@ const LoginPage = () => {
             sx={{
               display: "flex",
               alignItems: "center",
-              "& > :not(style)": { m: 1 },
+              "& > :not(style)": { m: 0 },
               "& .MuiInputBase-root": {
                 color: "white",
               },
@@ -82,7 +81,7 @@ const LoginPage = () => {
             sx={{
               display: "flex",
               alignItems: "center",
-              "& > :not(style)": { m: 1 },
+              "& > :not(style)": { m: 0 },
               "& .MuiInputBase-root": {
                 color: "white",
               },

@@ -4,3 +4,24 @@
 .MuiOutlinedInput-notchedOutline {
   border-color: white !important;
 }
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background-color: #0c0a09;
+  height: 100%;
+}
+#root {
+  height: 100%;
+}
+
+#cardbox:hover #menubar {
+  opacity: 1;
+}
+#icons {
+  color: white;
+}
+#icons:hover {
+  color: #9d174d;
+}

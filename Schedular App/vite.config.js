@@ -7,8 +7,10 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   server: {
     proxy: {
-      "/register": "http://localhost:7000",
-      "/authenticate": "http://localhost:7000",
+      "/register": "https://schedular-backend-k1ru.onrender.com",
+      "/authenticate": "https://schedular-backend-k1ru.onrender.com",
+      "/taskdetail": "https://schedular-backend-k1ru.onrender.com",
+      "/deletetask": "https://schedular-backend-k1ru.onrender.com",
     },
   },
   plugins: [react()],
